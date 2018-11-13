@@ -1,0 +1,26 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "프로그램 시작",
+            "program" : "${file}",
+            "runtimeExecutable": "C:/Program Files (x86)/nodejs/node",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "프로세스에 연결",
+            "port": 5858
+        }
+    ]
+}
